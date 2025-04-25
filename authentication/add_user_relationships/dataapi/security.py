@@ -7,7 +7,7 @@ from fastapi.security import OAuth2PasswordBearer
 from jose import ExpiredSignatureError, JWTError, jwt
 from passlib.context import CryptContext
 
-from add_user_relationships.dataapi.database import database, user_table
+from dataapi.database import database, user_table
 
 logger = logging.getLogger(__name__)
 

@@ -2,9 +2,9 @@ import logging
 
 from fastapi import APIRouter, HTTPException, status
 
-from add_user_relationships.dataapi.database import database, user_table
-from add_user_relationships.dataapi.models.user import UserIn
-from add_user_relationships.dataapi.security import (
+from dataapi.database import database, user_table
+from dataapi.models.user import UserIn
+from dataapi.security import (
     authenticate_user,
     create_access_token,
     get_password_hash,

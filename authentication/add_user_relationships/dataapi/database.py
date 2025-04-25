@@ -1,6 +1,6 @@
 import databases
 import sqlalchemy
-from add_user_relationships.dataapi.config import config
+from dataapi.config import config
 
 
 metadata = sqlalchemy.MetaData()

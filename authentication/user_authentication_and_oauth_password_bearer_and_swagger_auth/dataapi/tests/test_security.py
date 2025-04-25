@@ -1,7 +1,7 @@
 import pytest
 from jose import jwt
 
-from user_authentication_and_oauth_password_bearer_and_swagger_auth.dataapi import security
+from dataapi import security
 
 
 def test_access_token_expire_minutes():

@@ -5,10 +5,10 @@ from asgi_correlation_id import CorrelationIdMiddleware
 from fastapi import FastAPI, HTTPException
 from fastapi.exception_handlers import http_exception_handler
 
-from user_authentication_and_oauth_password_bearer_and_swagger_auth.dataapi.database import database
-from user_authentication_and_oauth_password_bearer_and_swagger_auth.dataapi.logging_conf import configure_logging
-from user_authentication_and_oauth_password_bearer_and_swagger_auth.dataapi.routers.post import router as post_router
-from user_authentication_and_oauth_password_bearer_and_swagger_auth.dataapi.routers.user import router as user_router
+from dataapi.database import database
+from dataapi.logging_conf import configure_logging
+from dataapi.routers.post import router as post_router
+from dataapi.routers.user import router as user_router
 
 logger = logging.getLogger(__name__)
 

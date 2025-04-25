@@ -1,7 +1,7 @@
 import pytest
 from httpx import AsyncClient
 
-from add_user_relationships.dataapi import security
+from dataapi import security
 
 
 async def create_post(

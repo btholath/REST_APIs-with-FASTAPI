@@ -1,7 +1,7 @@
 import logging
 from logging.config import dictConfig
 
-from dataapi.config import DevConfig, ProdConfig, config
+from uploadapi.config import DevConfig, ProdConfig, config
 
 
 def obfuscated(email: str, obfuscated_length: int) -> str:
@@ -65,7 +65,7 @@ def configure_logging() -> None:
                     "class": "logging.handlers.RotatingFileHandler",
                     "level": "DEBUG",
                     "formatter": "file",
-                    "filename": "dataapi.log",
+                    "filename": "storeapi.log",
                     "maxBytes": 1024 * 1024,  # 1MB
                     "backupCount": 5,
                     "encoding": "utf8",
@@ -81,7 +81,7 @@ def configure_logging() -> None:
             },
             "loggers": {
                 "uvicorn": {"handlers": ["default", "rotating_file"], "level": "INFO"},
-                "dataapi": {
+                "storeapi": {
                     "handlers": handlers,
                     "level": "DEBUG" if isinstance(config, DevConfig) else "INFO",
                     "propagate": False

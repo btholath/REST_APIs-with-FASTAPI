@@ -1,7 +1,7 @@
 import pytest
 from jose import jwt
 
-from add_user_relationships.dataapi import security
+from dataapi import security
 
 
 def test_access_token_expire_minutes():
