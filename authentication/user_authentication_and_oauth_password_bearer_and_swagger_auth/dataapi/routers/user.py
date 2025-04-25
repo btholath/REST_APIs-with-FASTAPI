@@ -4,9 +4,9 @@ from typing import Annotated
 from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordRequestForm
 
-from storeapi.database import database, user_table
-from storeapi.models.user import UserIn
-from storeapi.security import (
+from user_authentication_and_oauth_password_bearer_and_swagger_auth.dataapi.database import database, user_table
+from user_authentication_and_oauth_password_bearer_and_swagger_auth.dataapi.models.user import UserIn
+from user_authentication_and_oauth_password_bearer_and_swagger_auth.dataapi.security import (
     authenticate_user,
     create_access_token,
     get_password_hash,

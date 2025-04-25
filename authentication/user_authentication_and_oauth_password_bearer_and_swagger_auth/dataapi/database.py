@@ -1,7 +1,7 @@
 import databases
 import sqlalchemy
 
-from storeapi.config import config
+from user_authentication_and_oauth_password_bearer_and_swagger_auth.dataapi.config import config
 
 metadata = sqlalchemy.MetaData()
 

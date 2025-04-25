@@ -2,16 +2,16 @@ import logging
 from typing import Annotated
 
 from fastapi import APIRouter, Depends, HTTPException
-from storeapi.database import comment_table, database, post_table
-from storeapi.models.post import (
+from user_authentication_and_oauth_password_bearer_and_swagger_auth.dataapi.database import comment_table, database, post_table
+from user_authentication_and_oauth_password_bearer_and_swagger_auth.dataapi.models.post import (
     Comment,
     CommentIn,
     UserPost,
     UserPostIn,
     UserPostWithComments,
 )
-from storeapi.models.user import User
-from storeapi.security import get_current_user
+from user_authentication_and_oauth_password_bearer_and_swagger_auth.dataapi.models.user import User
+from user_authentication_and_oauth_password_bearer_and_swagger_auth.dataapi.security import get_current_user
 
 router = APIRouter()
 

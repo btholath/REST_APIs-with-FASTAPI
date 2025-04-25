@@ -6,8 +6,8 @@ from fastapi.testclient import TestClient
 from httpx import AsyncClient
 
 os.environ["ENV_STATE"] = "test"
-from dataapi.database import database, user_table  # noqa: E402
-from dataapi.main import app  # noqa: E402
+from user_authentication_and_oauth_password_bearer_and_swagger_auth.dataapi.database import database, user_table  # noqa: E402
+from user_authentication_and_oauth_password_bearer_and_swagger_auth.dataapi.main import app  # noqa: E402
 
 
 @pytest.fixture(scope="session")

@@ -1,7 +1,7 @@
 import logging
 from logging.config import dictConfig
 
-from storeapi.config import DevConfig, ProdConfig, config
+from user_authentication_and_oauth_password_bearer_and_swagger_auth.dataapi.config import DevConfig, ProdConfig, config
 
 
 def obfuscated(email: str, obfuscated_length: int) -> str:

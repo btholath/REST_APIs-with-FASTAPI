@@ -1,7 +1,7 @@
 import pytest
 from httpx import AsyncClient
 
-from storeapi import security
+from user_authentication_and_oauth_password_bearer_and_swagger_auth.dataapi import security
 
 
 async def create_post(
